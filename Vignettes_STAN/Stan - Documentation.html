@@ -1,0 +1,357 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Stan  - Documentation</title>
+<meta name="description" content="">
+
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Documentation">
+<meta name="twitter:description" content="">
+<meta name="twitter:site" content="@mcmc_stan">
+<meta name="twitter:creator" content="@mcmc_stan">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="//mc-stan.org/images/feature/wide_ensemble.png">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Documentation">
+<meta property="og:description" content="">
+<meta property="og:url" content="//mc-stan.org/users/documentation/">
+<meta property="og:site_name" content="stan-dev.github.io">
+
+
+
+
+
+<link rel="canonical" href="//mc-stan.org/users/documentation/">
+<link href="//mc-stan.org/feed.xml" type="application/atom+xml" rel="alternate" title="stan-dev.github.io Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="//mc-stan.org/assets/css/main.css">
+<!-- Webfonts -->
+<script src="https://use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script>
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+  <script src="//mc-stan.org/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="//mc-stan.org/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="//mc-stan.org/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="//mc-stan.org/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="//mc-stan.org/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="//mc-stan.org/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="//mc-stan.org/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="//mc-stan.org/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="//mc-stan.org/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body id="page">
+
+<div class="navigation-wrapper">
+        <nav role="navigation">
+            <ul>
+              
+                  
+                  <li><a href="//mc-stan.org/users/interfaces/" >Installation</a></li>
+              
+                  
+                  <li><a href="//mc-stan.org/users/documentation/" >Documentation</a></li>
+              
+                  
+                  <li><a href="//mc-stan.org/community/" >Community</a></li>
+              
+                  
+                  <li><a href="//mc-stan.org/about/" >About Us</a></li>
+              
+                  
+                  <li><a href="//mc-stan.org/support/" >Your Support</a></li>
+              
+<li><script async src="https://cse.google.com/cse.js?cx=001245703740021930201:rj3jc9m2qso"></script><div class="gcse-searchbox"></div></li>
+            </ul>
+        </nav>
+</div><!-- /.navigation-wrapper -->
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+
+<div class="gcse-searchresults"></div>
+
+<header class="masthead">
+        
+                <div class="wrap">
+                        <a href="//mc-stan.org/" class="site-logo" rel="home" title="stan-dev.github.io"><img src="//mc-stan.org/images/stan_logo.png" width="200" height="200" alt="stan-dev.github.io logo" class="animated fadeInDown"></a>
+                </div>
+        
+</header><!-- /.masthead -->
+
+
+<div class="js-menu-screen menu-screen"></div>
+
+
+<div id="main" role="main">
+  <article class="entry">
+    <img src="//mc-stan.org/images/feature/wide_ensemble.png" class="entry-feature-image" width="30%" alt="Documentation" >
+    <div class="entry-wrapper">
+      <header class="entry-header">
+        <h1 class="entry-title">Documentation</h1>
+      </header>
+      <div class="entry-content">
+        <h1 id="stan-users-guide">Stan User’s Guide</h1>
+
+<p>The Stan user’s guide provides example models and programming
+techniques for coding statistical models in Stan.
+It also serves as an example-driven introduction to Bayesian modeling
+and inference.
+For versions 2.18 and later, this is titled <em>Stan User’s Guide</em>.
+For versions 2.17 and earlier, this is part of the <em>Stan Reference Manual</em>.</p>
+
+<ul>
+  <li>
+    <p><a href="/docs/2_20/stan-users-guide/index.html">Stan User’s Guide 2.20</a>
+<span class="note">    (html)</span></p>
+  </li>
+  <li>
+    <p><a href="/docs/2_20/stan-users-guide-2_20.pdf">Stan User’s Guide 2.20 pdf</a>
+<span class="note">    (GitHub pdf,  CC-BY 4.0 license)</span></p>
+  </li>
+</ul>
+
+<h1 id="stan-language-reference-manual">Stan Language Reference Manual</h1>
+
+<p>The manual for Stan’s programming language for coding probability models,
+inference algorithms for fitting models and making predictions,
+and posterior analysis tools for evaluating the results.
+This manual applies to all Stan interfaces.</p>
+
+<ul>
+  <li>
+    <p><a href="/docs/2_20/reference-manual/index.html">Stan Language Reference Manual 2.20</a>
+<span class="note">    (html)</span></p>
+  </li>
+  <li>
+    <p><a href="/docs/2_20/reference-manual-2_20.pdf">Stan Language Reference Manual 2.20 pdf</a>
+<span class="note">    (GitHub pdf,  CC-BY 4.0 license)</span></p>
+  </li>
+</ul>
+
+<h1 id="stan-language-functions-reference">Stan Language Functions Reference</h1>
+
+<p>The reference for the functions defined in the Stan math
+library and available in the Stan programming language.
+For versions 2.17 and earlier, this is part of the <em>Stan Reference Manual</em>.</p>
+
+<ul>
+  <li>
+    <p><a href="/docs/2_20/functions-reference/index.html">Stan Language Functions Reference 2.20</a>
+<span class="note">    (html)</span></p>
+  </li>
+  <li>
+    <p><a href="/docs/2_20/functions-reference-2_20.pdf">Stan Language Functions Reference 2.20 pdf</a>
+<span class="note">    (GitHub pdf,  CC-BY 4.0 license)</span></p>
+  </li>
+</ul>
+
+<h1 id="rstan-documentation">RStan Documentation</h1>
+
+<ul>
+  <li><a href="/rstan">RStan Vignettes, tutorials, and other package information</a></li>
+</ul>
+
+<h1 id="pystan-documentation">PyStan Documentation</h1>
+
+<ul>
+  <li><a href="https://pystan.readthedocs.org/en/latest/api.html">PyStan API documentation from readthedocs.org</a></li>
+</ul>
+
+<h1 id="case-studies-and-notebooks">Case Studies and Notebooks</h1>
+
+<p>Case studies provide longer, more-detailed discussion of various
+applications, models, and methodologies.  Each case study is written
+in knitr or Jupyter notebooks so that the discussion is accompanied
+with working code.  Case studies written or validated by the Stan
+development team can be found at</p>
+
+<ul>
+  <li>
+    <p><a href="/users/documentation/case-studies.html">
+Case Studies</a></p>
+  </li>
+</ul>
+
+<p>The proceedings of each Stan Conference also take the form of
+self-contained notebooks. StanCon notebooks are hosted on GitHub 
+along with other materials from the conferences:</p>
+
+<ul>
+  <li>
+    <p><a href="https://github.com/stan-dev/stancon_talks">
+StanCon Materials</a> &nbsp; &nbsp; <span class="note">(GitHub, with video links)</span></p>
+  </li>
+</ul>
+
+<h1 id="tutorials">Tutorials</h1>
+
+<p>The Stan development team and many users have contributed tutorials aimed at introducing users to various aspects of statistical modeling with Stan, both
+in written and visual formats.  These tutorials can be found at</p>
+
+<ul>
+  <li>
+    <p><a href="/users/documentation/tutorials.html">Tutorials</a></p>
+  </li>
+</ul>
+
+<h1 id="specialized-field-guides">Specialized Field Guides</h1>
+
+<p>Tutorials, case studies, software packages, and publications related to
+specific fields.</p>
+
+<ul>
+  <li>
+    <p>
+<a href="https://education-stan.github.io">Education
+  research using Stan</a>
+&nbsp; <span class="note">(GitHub)</span>
+</p>
+  </li>
+</ul>
+
+<h1 id="the-stan-forums">The Stan Forums</h1>
+
+<p>The most up to date discussion of modeling techniques and computational
+issues if often found in the Stan Forums before it ends up in a case study
+or a paper.</p>
+
+<ul>
+  <li>
+    <p><a href="http://discourse.mc-stan.org/">Stan Forums</a>
+<span class="note">(Discourse)</span></p>
+  </li>
+</ul>
+
+<p>Discussions prior to June 2017 are archived and public on the now deprecated
+<a href="https://groups.google.com/forum/?fromgroups#!forum/stan-users">Stan Users Google Group</a>.</p>
+
+<h1 id="github-stan-developer-wiki">GitHub Stan Developer Wiki</h1>
+
+<p>The Stan Wiki is largely focused on development documentation but it also
+includes a few pages with helpful information for users.</p>
+
+<ul>
+  <li>
+    <p>
+<a href="https://github.com/stan-dev/stan/wiki">Stan Wiki</a> &nbsp; &nbsp; <span class="note">(GitHub)</span>
+</p>
+  </li>
+</ul>
+
+<p>Two particularly recommended pages are</p>
+
+<ul>
+  <li>
+    <p>
+<a href="https://github.com/stan-dev/stan/wiki/Stan-Best-Practices">
+Stan Best Practices</a> &nbsp; &nbsp; <span class="note">(GitHub)</span>
+</p>
+  </li>
+  <li>
+    <p>
+<a href="https://github.com/stan-dev/stan/wiki/Prior-Choice-Recommendations">
+Prior Choice Recommendations</a> &nbsp; &nbsp; <span class="note">(GitHub)</span>
+</p>
+  </li>
+</ul>
+
+<h1 id="further-references">Further References</h1>
+
+<p>Finally, there are many works that elaborate on aspects of Stan from
+algorithms to applications.  Some of the more relevant references can be
+found at</p>
+
+<ul>
+  <li>
+    <p><a href="/users/documentation/external.html">External References</a></p>
+  </li>
+</ul>
+
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
+    
+
+<!--<span>&copy; 2019 Stan Development Team. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="http://mademistakes.com/so-simple/" rel="nofollow">So Simple Theme</a>.</span>-->
+<div class="social-icons">
+	<a href="https://twitter.com/mcmc_stan" title="Stan Development Team on Twitter" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+	
+	
+	
+	
+	
+	
+	<a href="https://github.com/stan-dev" title="Stan Development Team on Github" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+	
+  
+	
+  <a href="//mc-stan.org/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
+</div><!-- /.social-icons -->
+
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script type="text/javascript">
+  var BASE_URL = '//mc-stan.org';
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="//mc-stan.org/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="//mc-stan.org/assets/js/scripts.min.js"></script>
+
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  var _gaq = _gaq || [];
+  var pluginUrl =
+ 'https://www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+  _gaq.push(['_setAccount', 'UA-65151620-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = 'https://stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+</body>
+</html>

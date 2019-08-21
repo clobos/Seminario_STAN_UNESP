@@ -1,0 +1,362 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Stan  - Tutorials</title>
+<meta name="description" content="">
+
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Tutorials">
+<meta name="twitter:description" content="">
+<meta name="twitter:site" content="@mcmc_stan">
+<meta name="twitter:creator" content="@mcmc_stan">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="//mc-stan.org/images/feature/wide_ensemble.png">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Tutorials">
+<meta property="og:description" content="">
+<meta property="og:url" content="//mc-stan.org/users/documentation/tutorials">
+<meta property="og:site_name" content="stan-dev.github.io">
+
+
+
+
+
+<link rel="canonical" href="//mc-stan.org/users/documentation/tutorials">
+<link href="//mc-stan.org/feed.xml" type="application/atom+xml" rel="alternate" title="stan-dev.github.io Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="//mc-stan.org/assets/css/main.css">
+<!-- Webfonts -->
+<script src="https://use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script>
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+  <script src="//mc-stan.org/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="//mc-stan.org/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="//mc-stan.org/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="//mc-stan.org/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="//mc-stan.org/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="//mc-stan.org/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="//mc-stan.org/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="//mc-stan.org/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="//mc-stan.org/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body id="page">
+
+<div class="navigation-wrapper">
+        <nav role="navigation" id="site-nav" class="animated drop">
+            <ul>
+      
+                    
+                    <li><a href="//mc-stan.org/users/interfaces/" >Installation</a></li>
+                  
+                    
+                    <li><a href="//mc-stan.org/users/documentation/" >Documentation</a></li>
+                  
+                    
+                    <li><a href="//mc-stan.org/community/" >Community</a></li>
+                  
+                    
+                    <li><a href="//mc-stan.org/about/" >About Us</a></li>
+                  
+                    
+                    <li><a href="//mc-stan.org/support/" >Your Support</a></li>
+                  
+            </ul>
+        </nav>
+</div><!-- /.navigation-wrapper -->
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+
+<header class="masthead">
+        
+                <div class="wrap">
+                        <a href="//mc-stan.org/" class="site-logo" rel="home" title="stan-dev.github.io"><img src="//mc-stan.org/images/stan_logo.png" width="200" height="200" alt="stan-dev.github.io logo" class="animated fadeInDown"></a>
+                </div>
+        
+</header><!-- /.masthead -->
+
+
+<div class="js-menu-screen menu-screen"></div>
+
+
+<div id="main" role="main">
+  <article class="entry">
+    <img src="//mc-stan.org/images/feature/wide_ensemble.png" class="entry-feature-image" width="30%" alt="Tutorials" >
+    <div class="entry-wrapper">
+      <header class="entry-header">
+        <h1 class="entry-title">Tutorials</h1>
+      </header>
+      <div class="entry-content">
+        <p class="center-txt">learn to use Stan</p>
+
+<h1 id="tutorial-papers-about-stan">Tutorial Papers About Stan</h1>
+
+<ul>
+  <li>
+    <p>Thomas P. Harte and R. Michael Weylandt (2016) <a href="http://tharte.github.io/mbt/">Modern Bayesian Tools for Time Series Analysis</a>. 2016. R in Finance Conference, Chicago, IL.</p>
+  </li>
+  <li>
+    <p>Jim Savage (2016) <a href="http://nbviewer.jupyter.org/github/QuantEcon/QuantEcon.notebooks/blob/master/IntroToStan_basics_workflow.ipynb">A quick-start introduction to Stan for economists</a>.  A <a href="http://quantecon.org/notebooks.html">QuantEcon Notebook</a>.</p>
+  </li>
+  <li>
+    <p>Michael Clark (2015) <a href="http://m-clark.github.io/docs/IntroBayes.html">Bayesian Basics (including Stan, BUGS, and
+JAGS)</a> Center for
+Statistical Consultation and Research, University of Michigan.</p>
+  </li>
+  <li>
+    <p>Tanner Sorensen and Shravan Vasishth (2015) <a href="http://www.ling.uni-potsdam.de/~vasishth/statistics/BayesLMMs.html">A tutorial on fitting Bayesian linear mixed models using Stan</a>. 2015.  University of Postdam.  Earlier draft, <i>arXiv</i>: 1506.06201.</p>
+  </li>
+  <li>
+    <p>Aki Vehtari, Andrew Gelman, and Jonah Gabry (2015) <a href="http://dx.doi.org/10.1007/s11222-016-9696-4">Practical Bayesian model evaluation using leave-one-out cross-validation and WAIC</a>. In <i>Statistics and Computing</i>, Online first doi:10.1007/s11222-016-9696-4. <a href="http://arxiv.org/abs/1507.04544"><i>arXiv</i>: 1507.04544</a>.</p>
+  </li>
+  <li>
+    <p>Andrew Gelman, Daniel Lee, and Jiqiang Guo (2015) <a href="http://www.stat.columbia.edu/~gelman/research/published/stan_jebs_2.pdf">Stan: A probabilistic programming language for Bayesian inference and optimization</a>. In press, <i>Journal of Educational and Behavior Science</i>.</p>
+  </li>
+</ul>
+
+<h1 id="tutorial-papers-about-hmc">Tutorial Papers About HMC</h1>
+
+<ul>
+  <li>
+    <p>Michael Betancourt (2017) <a href="https://arxiv.org/abs/1701.02434">A Conceptual Introduction to
+Hamiltonian Monte Carlo</a>. <em>arXiv</em>.</p>
+  </li>
+  <li>
+    <p>Cole C. Monnahan, James T. Thorson, and Trevor A. Branch (2016)
+<a href="http://onlinelibrary.wiley.com/doi/10.1111/2041-210X.12681/full">Faster estimation of Bayesian models in ecology using Hamiltonian Monte Carlo</a>.  <em>Methods in Ecology and Evolution</em>.</p>
+  </li>
+</ul>
+
+<h1 id="tutorial-videos">Tutorial Videos</h1>
+
+<h2 id="courses">Courses</h2>
+
+<ul>
+  <li>
+    <p><a class="external" href="https://youtu.be/oy7Ks3YfbDg?list=PLDcUM9US4XdM9_N6XUUFrhghGJ4K25bFc">Statistical
+Rethinking Fall 2017</a> <span class="note"> (YouTube)</span>
+<br />Richard McElreath.</p>
+  </li>
+  <li>
+    <p><a class="external" href="https://youtu.be/sUnG2oyz4ts?list=PLSZp9QshJ8wyPCgoQR0Kw3HDNuy1FEZH9">Bayesian Statistics for the Social Sciences 2018</a>  <span class="note"> (YouTube)</span>
+<br /> Ben Goodrich.</p>
+  </li>
+  <li>
+    <p><a class="external" href="https://www.youtube.com/playlist?list=PLu77iLvsj_GPoC6tTw01EP1Tcr2I6zEm8">Bayes Days 2015 Stan/RStan Tutorials</a> (5 hours)
+ <span class="note">(YouTube)</span>
+ <br />
+ Mike Lawrence (2015)</p>
+  </li>
+</ul>
+
+<h2 id="lectures">Lectures</h2>
+
+<ul>
+  <li>
+    <p><a class="external" href="https://channel9.msdn.com/Events/useR-international-R-User-conferences/useR-International-R-User-2017-Conference/How-to-Use-RStan-to-Estimate-Models-in-External-R-Packages">
+How to Use (R)Stan to Estimate Models in External R Packages </a> <span class="note">
+(useR2017 Conference)</span>
+<br />
+Ben Goodrich (2017)</p>
+  </li>
+  <li>
+    <p><a class="external" href="https://www.youtube.com/watch?v=s-9itaL1v-o">Combining
+the Power of R with Stan to Extend Analysis Functionality (60 minutes) </a> <span class="note">
+(Southern New England UseR Meetup via YouTube)</span>
+<br />
+Ben Goodrich (2017)</p>
+  </li>
+  <li>
+    <p><a class="external" href="https://icerm.brown.edu/video_archive/#/play/1107">Scalable
+Bayesian Inference with Hamiltonian Monte Carlo (40 minutes) </a> <span class="note">
+(ICERM Video Archive)</span>
+<br />
+Michael Betancourt (2016)</p>
+  </li>
+  <li>
+    <p><a class="external" href="https://www.youtube.com/watch?v=uSjsJg8fcwY">Some Bayesian
+Modeling Techniques in Stan (100 minutes) </a> <span class="note">(YouTube)</span>
+<br />
+Michael Betancourt (2016)</p>
+  </li>
+  <li>
+    <p><a class="external" href="https://www.youtube.com/watch?v=VnNdhsm0rJQ">Scalable Bayesian
+Inference with Hamiltonian Monte Carlo (60 minutes) </a> <span class="note">(YouTube)</span>
+<br />
+Michael Betancourt (2016)</p>
+  </li>
+  <li>
+    <p><a class="external" href="https://youtu.be/95bpsWr1lJ8">ADVI — 10
+Minute Presentation</a>  <span class="note">(YouTube)</span>
+<br />
+Alp Kucukelbir (2015)</p>
+  </li>
+  <li>
+    <p><a class="external" href="https://vimeo.com/132156595">Probabilistic
+Modeling and Inference Made Easy</a> (60 minutes) <span class="note">(Vimeo)</span>.
+<br />
+Bob Carpenter (2015)</p>
+  </li>
+  <li>
+    <p><a class="external" href="https://www.youtube.com/watch?v=qQFF4tPgeWI">Bayesian Inference and MCMC</a> (3 hours) <span class="note">(YouTube)</span>. <br /> Bob Carpenter (2015)</p>
+  </li>
+  <li>
+    <p><a class="external" href="https://www.youtube.com/watch?v=tLprFqSWS1w">Stan
+  for the beginners [Bayesian inference] in 6 mins (close captioned)</a>
+  <span class="note">(YouTube)</span>
+  <br />
+  Ehsan Karim (2015)</p>
+  </li>
+  <li>
+    <p><a href="https://www.youtube.com/watch?v=pHsuIaPbNbY">Efficient Bayesian inference with Hamiltonian Monte Carlo</a>
+  <span class="note">(YouTube)</span>
+  <br />
+  Michael Betancourt (2014) Machine Learning Summer School, Reykjavik</p>
+  </li>
+  <li>
+    <p><a href="https://www.youtube.com/watch?v=xWQpEAyI5s8">The Stan modeling language</a>
+ <span class="note">(YouTube)</span>
+ <br />
+ Michael Betancourt (2014) Machine Learning Summer School, Reykjavik</p>
+  </li>
+</ul>
+
+<h1 id="textbooks-employing-stan">Textbooks Employing Stan</h1>
+
+<ul>
+  <li>
+    <p>Joseph M. Hilbe, Rafeal S. de Souza, and Emile E. O.
+Ishida.  2017. <a href="https://www.bayesianmodelsforastrophysicaldata.com"><i>Bayesian Models for Astrophysical Data Using R, JAGS,
+Python, and Stan</i></a>.
+Cambridge University Press.</p>
+  </li>
+  <li>
+    <p>Kentarou Matsuura (2016) <a href="https://www.amazon.co.jp/gp/product/4320112423/ref=pd_sim_14_1"><i>Bayesian Statistical Modeling Using
+Stan and R</i></a>.
+Kyoritsu Shuppan Co., Ltd.</p>
+  </li>
+  <li>
+    <p>Julian J. Faraway (2016) <a href="http://www.maths.bath.ac.uk/~jjf23/ELM/index.html"><i>Extending the Linear Model with R:
+Generalized Linear, Mixed Effects and Nonparametric Regression
+Models, Second
+Edition</i></a>. Chapman
+&amp; Hall/CRC Press.</p>
+  </li>
+  <li>
+    <p>Richard McElreath (2016) <a href="http://xcelab.net/rm/statistical-rethinking/"><i>Statistical Rethinking: A Bayesian
+Course with Examples in R and
+Stan</i></a>. Chapman
+&amp; Hall/CRC Press.  <br /> free online: Chapters 1 and 12; code
+examples; video tutorials (follow title link above)</p>
+  </li>
+  <li>
+    <p>Fränzi Korner-Nievergelt, Tobias Roth, Stefanie von Felten, Jérôme
+Guélat, Bettina Almasi, Pius Korner-Nievergelt (2015) <a href="http://www.amazon.com/Bayesian-Analysis-Ecology-Linear-Models-ebook/dp/B00W18O078"><i>Bayesian
+Data Analysis in Ecology Using Linear Models with R, BUGS, and
+Stan</i></a>.
+Academic Press.</p>
+  </li>
+  <li>
+    <p>John Kruschke (2015) <a href="http://www.amazon.com/Doing-Bayesian-Data-Analysis-Second/dp/0124058884"><i>Doing Bayesian Data Analysis, Second
+Edition: A Tutorial with R, JAGS, and
+Stan</i></a>.
+Academic Press.</p>
+  </li>
+  <li>
+    <p>Andrew Gelman, John B. Carlin, Hal S. Stern, David B. Dunson, Aki
+Vehtari, and Donald B. Rubin (2013) <a href="http://www.amazon.com/gp/product/1439840954"><i>Bayesian Data Analysis,
+Third Edition</i></a>.
+Chapman &amp; Hall/CRC Press. <br /> free online: <a href="http://www.stat.columbia.edu/~gelman/book/software.pdf">Appendix C:
+Computation in R and
+Stan</a></p>
+  </li>
+</ul>
+
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
+    
+
+<!--<span>&copy; 2019 Stan Development Team. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="http://mademistakes.com/so-simple/" rel="nofollow">So Simple Theme</a>.</span>-->
+<div class="social-icons">
+	<a href="https://twitter.com/mcmc_stan" title="Stan Development Team on Twitter" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+	
+	
+	
+	
+	
+	
+	<a href="https://github.com/stan-dev" title="Stan Development Team on Github" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+	
+  
+	
+  <a href="//mc-stan.org/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
+</div><!-- /.social-icons -->
+
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script type="text/javascript">
+  var BASE_URL = '//mc-stan.org';
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="//mc-stan.org/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="//mc-stan.org/assets/js/scripts.min.js"></script>
+
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  var _gaq = _gaq || [];
+  var pluginUrl =
+ 'https://www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+  _gaq.push(['_setAccount', 'UA-65151620-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = 'https://stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+</body>
+</html>
